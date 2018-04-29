@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ilk HTML Sayfasi</title>
+		
+		<style>
+			table{
+				width: 100%
+			}
+			td, th{
+				border: 1px solid gray;
+				text-align: left;
+				padding: 8px;
+			}
+			tr:nth-child(even){
+				background-color: gray;
+			}
+			.test{
+				background-color: black;
+				color:white;
+			}
+			.test-2{
+				background-color: red;
+				color:white;
+			}
+/* 			div{
+		background-color:pink;
+		color:white;
+	}	 */	
+			 div.container{
+				width:100%;
+			}
+			header, footer{
+				padding:1em;
+				color:white;
+				background-color: black;
+				text-align: center;
+			}
+			nav{
+				float: left;
+				max-width: 150px;
+				margin: 0;
+				padding: 1em;
+
+			}
+			article{
+				margin-left: 170px;
+				padding: 1em;
+			
+				border-left: 1px solid black;
+			}
+
+    </style>
+
+	</head>
+	<body>
+		
+		<h1>Google Haritasi</h1>
+		
+		<div id="map" style="width:800px; height:400px;"></div>
+
+		<script>
+			function myMap(){
+				var mapOptions = {
+					center: new google.maps.LatLng(41.0,28.9),
+					zoom: 10,
+					mapTypeId: google.maps.MapTypeId.HYBRID
+				}
+
+				var map=new google.maps.Map(document.getElementById("map"), mapOptions);
+			}
+		</script>
+		
+
+		  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA93G3aqPY3eSmqDmx8mJrxipdb-tj8Zxk&callback=myMap"
+  					type="text/javascript"></script>
+
+
+
+
+		<hr>
+		<hr>
+		<iframe src="https://www.youtube.com/embed/l61SKSxzw5s" 
+				width="800" height="400"></iframe>
+
+		<hr>
+		<hr>
+		<h1>Video Ekleme</h1>
+		<video width="800" controls>
+			<source src="test.mp4" type="video/mp4">
+		</video>
+
+		<hr>
+		<hr>
+		<form action="">
+			<fieldset>
+				<legend> Kisisel Bilgiler:</legend>
+				Isminiz: <br>
+				<input type="text" name="isim" value="Ugurcan">
+				<br>
+				Soyisminiz: <br>
+				<input type="text" name="soyisim" value="Cetin">
+				<br><br>
+				<textarea name="mesaj" id="" cols="30" rows="10">Lutfen Mesajini Yaziniz...</textarea>
+				<br>
+				<select name="markalar" id="">
+						<option value="volvo">Volvo</option>
+						<option value="Audi">Audi</option>
+						<option value="Fiat">Fiat</option>
+						<option value="Mercedes">Mercedes</option>
+				</select>
+				<br>
+				<br>
+				<input list="ulkeler" name="ulkeler">
+				<datalist id="ulkeler">
+					<option value="Turkey">Turkey</option>
+					<option value="England">England</option>
+					<option value="Hungary">Hungary</option>
+					<option value="Germany">Germany</option>
+				</datalist>
+				<br>
+				<br>
+				<input type="submit" value="Gonder">	
+			</fieldset>
+		</form>
+
+		<hr>
+		<br>
+
+		<form action="">
+			Isim:
+			<input type="text" name="isim" value="" placeholder="Isim">
+			<br>
+			Soyisim:
+			<input type="text" name"Soyisim" value="" placeholder="Soyisim">
+			<!-- <input type="submit" value="Gonder"> -->
+			<button>Gonder</button>
+		</form>
+
+
+		<hr>
+		<div class="container">
+			<header>
+				<h1>Bu bir basliktir</h1>
+			</header>
+			<nav>
+				<ul>
+					<li> <a href="#">Ilk Link</a> </li>
+					<li> <a href="#">Ikinci Link</a> </li>
+					<li> <a href="#">Ucuncu Link</a> </li>
+				</ul>
+			</nav>
+			<article>
+				<h1>Makale Basligi</h1>
+				<p>
+					Lorem ipsum dolor sit amet, ea quo suas feugiat explicari, cu sea recteque deterruisset, ut est sint meliore recusabo. Cum aeque incorrupte no. Eam omnium recteque salutandi ex, accusam suscipit per id. Ne usu facer clita, ei est inermis imperdiet definiebas. Vix modo senserit efficiendi at, facete tritani nominavi cu mei. Ei mel alienum temporibus, congue consulatu ei cum.
+				</p>
+				<p>
+					Ne oporteat corrumpit qui, amet mucius civibus ne eam. Sit postea oporteat et. Illud equidem duo at, cum primis deseruisse assueverit ne. In mentitum euripidis concludaturque cum. Vix ei iuvaret repudiandae, homero alterum hendrerit qui an. Ea convenire elaboraret quaerendum vim, solet audire invenire id qui, consulatu maiestatis eum ei.
+				</p>
+			</article>
+			<footer>Copyright Since 2015 Cetin Yazilim</footer>
+		</div>
+			
+		<hr>
+		<iframe src="https://cdn.pixabay.com/photo/2017/09/08/02/24/chess-2727443__340.jpg" frameborder="0" height="300" width="300"></iframe>
+		
+
+		<hr>
+		<div class="test">
+			<h2>Test</h2>
+			<p>Lorem ipsum dolor sit amet, ea quo suas feugiat explicari, cu sea recteque deterruisset, ut est sint meliore recusabo. Cum aeque incorrupte no. Eam omnium recteque salutandi ex, accusam suscipit per id. Ne usu facer clita, ei est inermis imperdiet definiebas. Vix modo senserit efficiendi at, facete tritani nominavi cu mei. Ei mel alienum temporibus, congue consulatu ei cum.
+
+			Ne oporteat corrumpit qui, amet mucius civibus ne eam. Sit postea oporteat et. Illud equidem duo at, cum primis deseruisse assueverit ne. In mentitum euripidis concludaturque cum. Vix ei iuvaret repudiandae, homero alterum hendrerit qui an. Ea convenire elaboraret quaerendum vim, solet audire invenire id qui, consulatu maiestatis eum ei.</p>
+		</div>
+
+		<div class="test-2">
+			<h2>Test</h2>
+			<p>Lorem ipsum dolor sit amet, ea quo suas feugiat explicari, cu sea recteque deterruisset, ut est sint meliore recusabo. Cum aeque incorrupte no. Eam omnium recteque salutandi ex, accusam suscipit per id. Ne usu facer clita, ei est inermis imperdiet definiebas. Vix modo senserit efficiendi at, facete tritani nominavi cu mei. Ei mel alienum temporibus, congue consulatu ei cum.
+
+			Ne oporteat corrumpit qui, amet mucius civibus ne eam. Sit postea oporteat et. Illud equidem duo at, cum primis deseruisse assueverit ne. In mentitum euripidis concludaturque cum. Vix ei iuvaret repudiandae, homero alterum hendrerit qui an. Ea convenire elaboraret quaerendum vim, solet audire invenire id qui, consulatu maiestatis eum ei.</p>
+		</div>
+
+		<div>
+			<h2>Test</h2>
+			<p>Lorem ipsum dolor sit amet, ea quo suas feugiat explicari, cu sea recteque deterruisset, ut est sint meliore recusabo. Cum aeque incorrupte no. Eam omnium recteque salutandi ex, accusam suscipit per id. Ne usu facer clita, ei est inermis imperdiet definiebas. Vix modo senserit efficiendi at, facete tritani nominavi cu mei. Ei mel alienum temporibus, congue consulatu ei cum.
+
+			Ne oporteat corrumpit qui, amet mucius civibus ne eam. Sit postea oporteat et. Illud equidem duo at, cum primis deseruisse assueverit ne. In mentitum euripidis concludaturque cum. Vix ei iuvaret repudiandae, homero alterum hendrerit qui an. Ea convenire elaboraret quaerendum vim, solet audire invenire id qui, consulatu maiestatis eum ei.</p>
+		</div>
+
+		
+		<hr>
+		<h2>Block-level Elements</h2>
+			<ol>
+				<li>div</li>
+				<li>h1,h2,....,h6</li>
+				<li>p</li>
+				<li>form</li>
+			</ol>
+		<h2>Inline Elements</h2>
+			<ol>
+				<li>span</li>
+				<li>a</li>
+				<li>img</li>
+			
+			</ol>
+		<hr>
+		<h2>Listeler</h2>
+		<h4>Siralanmamis Liste</h4>
+		<ul>
+			<li>Kahve</li>
+			<li>Cay</li>
+			<li>Su</li>
+		</ul>
+
+
+		<h4>Siralanmis Liste</h4>
+		<ol>
+			<li>Kahve</li>
+			<li>Cay</li>
+			<li>Su</li>
+		</ol>
+		<hr>
+		<h2>Tablolar</h2>
+		<table>
+			<tr>
+				<th>Adi</th>
+				<th>Soyadi</th>
+				<th>Okulu</th>
+			</tr>
+			<tr>
+				<td>Ugurcan</td>
+				<td>Cetin</td>
+				<td>Yalova Universitesi</td>
+			</tr>
+			<tr>
+				<td>Ugurcan</td>
+				<td>Cetin</td>
+				<td>Yalova Universitesi</td>
+			</tr>
+		</table>
+
+		<hr>
+		<!-- Alintilar Kismi -->
+		<h2>Alintilar</h2>
+
+		<p>Lorem ipsum dolor sit amet, <q>ea quo suas feugiat explicari, cu sea recteque deterruisset, ut est sint meliore recusabo. Cum aeque incorrupte no</q></p>
+
+		<p>Lorem ipsum dolor sit amet, </p>
+
+		<blockquote cite="https://www.google.com/">
+				Lorem ipsum dolor sit amet, ea quo suas feugiat explicari, cu sea recteque deterruisset, ut est sint meliore recusabo. Cum aeque incorrupte no. Eam omnium recteque salutandi ex, accusam suscipit per id. Ne usu facer clita, ei est inermis imperdiet definiebas. Vix modo senserit efficiendi at, facete tritani nominavi cu mei. Ei mel alienum temporibus, congue consulatu ei cum.
+		</blockquote>
+
+		<p>Lorem ipsum <abbr title="Lorem Ipsum Generator">dolor</abbr> sit amet,</p>
+
+		<hr>
+		<!-- Formatting Elements -->
+		<h2>Formatting Elements</h2>
+
+			<b>Bold Text</b> <br>
+			<strong>Important Text</strong> <br>
+			<i>Italic Text</i> <br>
+			<em>Emphasized Text</em> <br>
+			<mark>Marked Text</mark> <br>
+			<small>Small Text</small> <br>
+			<del>Deleted Text</del> <br>
+			<ins>Inserted Text</ins> <br>
+			<sub>Subscript Text</sub> <br>
+			<sup>Superscript Text</sup> <br>
+
+			<hr>
+
+			<h1>Ilk Baslik</h1>
+			<h6>Son Baslik</h6>
+			<p>Ilk Paragraf</p>
+
+			<a href="https://www.google.com/">Link to Google</a>
+			<br>
+			<img src="https://cdn.pixabay.com/photo/2017/09/23/11/43/football-2778583__340.jpg" alt="futbol topu">
+			<hr>
+
+	</body>
+</html>
